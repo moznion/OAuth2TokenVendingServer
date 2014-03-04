@@ -33,7 +33,7 @@ $ carton install
 
     authorize_uri    => 'http://example.com/authorize',
     access_token_uri => 'http://example.com/access_token',
-    redirect_uri     => 'http://URL_TO_THIS_SERVER.com/token',
+    redirect_uri     => 'http://URL_TO_THIS_SERVER.com/token', # <= Perhaps, it should be blank (e.g. on GitHub OAuth)
 
     scope => [qw/read write/],
 };
