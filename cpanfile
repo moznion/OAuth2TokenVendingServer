@@ -11,6 +11,9 @@ requires 'Teng', '0.18';
 requires 'Test::WWW::Mechanize::PSGI';
 requires 'Text::Xslate', '2.0009';
 requires 'Time::Piece', '1.20';
+requires 'Time::HiRes', '1.9726';
+requires 'LWP::Protocol::https', '0';
+requires 'OAuth::Lite2', '0.07';
 requires 'perl', '5.010_001';
 
 on configure => sub {
