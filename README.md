@@ -42,7 +42,7 @@ $ carton install
 <li>Start server</li>
 
 <pre>
-$ carton exec -- plackup script/oauth2tokenvendingserver-server
+$ carton exec -- plackup -E production script/oauth2tokenvendingserver-server
 </pre>
 </ol>
 
