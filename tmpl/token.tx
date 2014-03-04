@@ -4,11 +4,16 @@
 
 <h1 style="margin-top: 20px; text-align: center; font-size: 80px; line-height: 1; letter-spacing: -2px;"><: $app_name :></h1>
 
-<p style="text-align: center; font-size: 20px">
-  <: $description :>
-</p>
-
 <div style="text-align: center; margin-top: 40px">
-  <a href="./auth"><button class="btn btn-default">Authenticate</button></a>
+  <table class="table">
+    <tr>
+      <th>
+        Access Token:
+      </th>
+      <td>
+        <: $access_token :>
+      </td>
+    </tr>
+  </table>
 </div>
 : }

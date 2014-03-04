@@ -31,10 +31,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
+                    <li><a href="./"><: $app_name :></a></li>
                 </ul>
             </div>
         </div><!-- /.container -->
@@ -43,9 +40,6 @@
         <div id="main">
             <: block content -> { } :>
         </div>
-        <footer class="footer">
-            Powered by <a href="http://amon.64p.org/">Amon2</a>
-        </footer>
     </div>
 </body>
 </html>
