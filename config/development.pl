@@ -1,12 +1,16 @@
-use File::Spec;
-use File::Basename qw(dirname);
-my $basedir = File::Spec->rel2abs(File::Spec->catdir(dirname(__FILE__), '..'));
-my $dbpath = File::Spec->catfile($basedir, 'db', 'development.db');
+use strict;
+use warnings;
+use utf8;
 +{
-    'DBI' => [
-        "dbi:SQLite:dbname=$dbpath", '', '',
-        +{
-            sqlite_unicode => 1,
-        }
-    ],
+    app_name    => '__YOUR_APP_NAME__',
+    description => '__YOUR_APP_DESCRIPTION__',
+
+    client_id     => '__YOUR_APP_CLIENT_ID__',
+    client_secret => '__YOUR_APP_CLIENT_SECRET__',
+
+    authorize_uri    => 'http://example.com/authorize',
+    access_token_uri => 'http://example.com/access_token',
+    redirect_uri     => 'http://yourapp.com/token',
+
+    scope => [qw/read write/],
 };
