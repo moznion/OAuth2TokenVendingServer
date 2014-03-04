@@ -50,7 +50,7 @@ get '/token' => sub {
         redirect_uri => '',
     );
     unless ($access_token) {
-        return $client->errstr;
+        return $c->create_simple_status_page(406, 'Not Acceptable');
     }
 
     return $c->render('token.tx', {
