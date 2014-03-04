@@ -14,29 +14,37 @@ Access token vending server for OAuth2
 
 ## Getting Started
 
-1. carton install
+<ol>
+<li>carton install</li>
 
-    $ carton install
+<pre>
+$ carton install
+</pre>
 
-2. Edit `config/production.pl`
+<li>Edit `config/production.pl`</li>
 
-    +{
-        app_name    => '__YOUR_APP_NAME__',
-        description => '__YOUR_APP_DESCRIPTION__',
+<pre>
++{
+    app_name    => '__YOUR_APP_NAME__',
+    description => '__YOUR_APP_DESCRIPTION__',
 
-        client_id     => '__YOUR_APP_CLIENT_ID__',
-        client_secret => '__YOUR_APP_CLIENT_SECRET__',
+    client_id     => '__YOUR_APP_CLIENT_ID__',
+    client_secret => '__YOUR_APP_CLIENT_SECRET__',
 
-        authorize_uri    => 'http://example.com/authorize',
-        access_token_uri => 'http://example.com/access_token',
-        redirect_uri     => 'http://URL_TO_THIS_SERVER.com/token',
+    authorize_uri    => 'http://example.com/authorize',
+    access_token_uri => 'http://example.com/access_token',
+    redirect_uri     => 'http://URL_TO_THIS_SERVER.com/token',
 
-        scope => [qw/read write/],
-    };
+    scope => [qw/read write/],
+};
+</pre>
 
-3. Start server
+<li>Start server</li>
 
-    $ carton exec -- plackup script/oauth2tokenvendingserver-server
+<pre>
+$ carton exec -- plackup script/oauth2tokenvendingserver-server
+</pre>
+</ol>
 
 ## LICENSE
 
