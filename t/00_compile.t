@@ -8,7 +8,6 @@ use OAuth2TokenVendingServer::Web;
 use OAuth2TokenVendingServer::Web::View;
 use OAuth2TokenVendingServer::Web::ViewFunctions;
 
-use OAuth2TokenVendingServer::DB::Schema;
 use OAuth2TokenVendingServer::Web::Dispatcher;
 
 
