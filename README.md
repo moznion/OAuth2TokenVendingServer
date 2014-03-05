@@ -46,6 +46,10 @@ $ carton exec -- plackup -E production script/oauth2tokenvendingserver-server
 </pre>
 </ol>
 
+## See Also
+
+[OAuth1TokenVendingServer](https://github.com/moznion/OAuth1TokenVendingServer)
+
 ## LICENSE
 
 Copyright (C) moznion.
